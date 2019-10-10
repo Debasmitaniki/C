@@ -50,7 +50,8 @@ http://web.torek.net/torek/
 */
 // biblioteca de padrão de entrada e saida, standart input and output
 #include <stdio.h>
-
+#include<stdlib.h>
+#include<string.h>
 //declaração das variaveis
 char  line[100],operator; 
 int   result,value;
@@ -73,7 +74,7 @@ char opcao_menu() {
 int main() {
 // chama o banner  e seta resultado para zero
     opcao_menu(); result = 0; 
-    while (1) {
+    while (true) {
      printf("Resultado: %d\x0a", result );
      printf("Digite Operador e o numero : ");
 // pega as duas entradas

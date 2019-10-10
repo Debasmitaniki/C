@@ -37,6 +37,7 @@ zepplin,otacon,backbone,nibbles,voidpointer,muzgo,memset,novato_br
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include<math.h>
 
 // Colors Macros
 #define WHITE1 "[0m"
@@ -211,7 +212,7 @@ TookPacket(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
 //string to word in file
  FileWord=malloc( sizeof(char *)*size_payload );
 	
- if(size_payload^0) 
+ if(size_payload==1) 
  {
   fprintf(stdout,"   Payload (%d bytes):\n", size_payload);
   fprintf(stdout,"Look Payload:\n%s\n",payload);
